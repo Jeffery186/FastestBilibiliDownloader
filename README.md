@@ -28,14 +28,20 @@
 
 ## 运行
 
-下载的视频会存放在运行路径下的**download**文件夹下，每个视频（aid）一个文件夹。
+下载的视频会存放在运行路径下的**download**文件夹下，每个视频（aid）一个文件夹，安装有ffmpeg的默认会将flv格式的视频转为mp4格式的视频，存放在在当前运行路径的**output**文件夹内。
+
+下载可直接运行的二进制文件：https://github.com/zyhibook/FastestBilibiliDownloader/releases/download/v0.1/start-concurrent-engine
 
 ```shell
+wget https://github.com/zyhibook/FastestBilibiliDownloader/releases/download/v0.1/start-concurrent-engine
+./start-concurrent-engine
 Please enter your id type(`aid` or `upid`) #aid是视频id，upid是up主id，可以在up主主页地址栏获得。
 Please enter your id #输入id
 ```
 
+## 示例截图：
 
+![](https://www.imglink.cc/images/2021/01/04/bb6b5633e4b54fee6ad56e67ff5649dc.png)
 
 ### 使用Golang编译环境
 1. 安装Golang编译环境
